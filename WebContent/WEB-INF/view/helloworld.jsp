@@ -8,7 +8,11 @@
 </head>
 
 <body>
-	<h1>The form was submitted</h1>
+	Hello World of Spring!
+	
+	<br><br>
+	Student name: ${param.studentName}
+	
 </body>
 
 </html>
