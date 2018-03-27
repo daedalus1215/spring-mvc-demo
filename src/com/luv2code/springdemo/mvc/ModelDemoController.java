@@ -13,26 +13,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ModelDemoController {
 
 	
-	@RequestMapping("/showNewform")
-	public String showNewForm() {
-		return "modeldemo-form";
-	}
-	
-	
-	@RequestMapping("/processNewForm")
-	public String processNewForm(HttpServletRequest request, Model model) {
-//		// read the request parameter from the HTML form	
-//		String theName = request.getParameter("studentName");
+//	@RequestMapping("/showNewform")
+//	public String showNewForm() {
+//		return "modeldemo-form";
+//	}
+//	
+//	
+//	@RequestMapping("/processNewForm")
+//	public String processNewForm(HttpServletRequest request, Model model) {
+////		// read the request parameter from the HTML form	
+////		String theName = request.getParameter("studentName");
+////		
+////		// convert the data to all caps
+////		theName = theName.toUpperCase();
+////		
+////		// create the message
+////		String result = "Yo " + theName;
+////		
+////		// add message to the model
+////		model.addAttribute("message", result);
 //		
-//		// convert the data to all caps
-//		theName = theName.toUpperCase();
-//		
-//		// create the message
-//		String result = "Yo " + theName;
-//		
-//		// add message to the model
-//		model.addAttribute("message", result);
-		
-		return "model-demo";		
-	}
+//		return "model-demo";		
+//	}
 }
