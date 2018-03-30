@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HelloWorldController {
 
+	
+	// First testing set.
 	@RequestMapping("/showForm")
 	public String showForm() {
 		return "helloworld-form";
@@ -22,6 +24,9 @@ public class HelloWorldController {
 	
 	
 	
+	
+	
+	// Second testing set.	
 	@RequestMapping("/showform2")
 	public String showform2() {
 		return "modeldemo-form";
@@ -30,6 +35,26 @@ public class HelloWorldController {
 	
 	@RequestMapping("/processNewForm")
 	public String processNewForm(HttpServletRequest request, Model model) {
+		// read the request parameter from the HTML form	
+		String theName = request.getParameter("studentName");
+		
+		// convert the data to all caps
+		theName = theName.toUpperCase();
+		
+		// create the message
+		String result = "Yo " + theName;
+		
+		// add message to the model
+		model.addAttribute("message", result);
+		
+		return "model-demo";		
+	}
+	
+	
+	
+	
+	@RequestMapping("/processFormVersionThree")
+	public String processFormVersionThree(HttpServletRequest request, Model model) {
 		// read the request parameter from the HTML form	
 		String theName = request.getParameter("studentName");
 		
