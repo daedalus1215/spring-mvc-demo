@@ -10,7 +10,9 @@
 	<body>
 		<h1>You have been confirmed.</h1>	
 		<h2>${student.firstName} ${student.lastName}</h2>
-		<h3>You selected ${student.country} country</h3>
+		<p>You selected ${student.country} country</p>
+		<p>Your selected favorite language was: ${student.favoriteLanguage}</p>
+		
 	</body>
 
 </html>
