@@ -8,5 +8,8 @@
 	<br/>
 	<br/>
 	<a href="/spring-mvc-demo/student/showForm">Student show form</a>
+	<br/>
+	<br/>
+	<a href="/spring-mvc-demo/customer/showForm">Student show form</a>
 </body>
 </html>
