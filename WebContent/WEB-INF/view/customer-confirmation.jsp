@@ -10,7 +10,7 @@
 
 <body>
 	<h1>You have been confirmed.</h1>
-	The customer is confirmed ${customer.firstName} ${customer.lastName} .
+	The customer is confirmed ${customer.firstName} ${customer.lastName} with a freePasses ${ customer.freePasses }.
 
 </body>
 
