@@ -11,7 +11,7 @@ public class Customer {
 	private String firstName;
 	
 	@NotNull(message="is required")
-	@Size(min=2, message="is required")
+	@Size(min=2, message="Length is too small for last name")
 	private String lastName;
 
 	
