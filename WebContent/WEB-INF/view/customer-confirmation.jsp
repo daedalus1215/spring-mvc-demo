@@ -11,8 +11,11 @@
 <body>
 	<h1>You have been confirmed.</h1>
 	The customer is confirmed ${customer.firstName} ${customer.lastName} with a freePasses ${ customer.freePasses }.
-	</br>
+	<br/>
 	The postal code for the customer is: ${customer.postalCode}.
+	<br/>
+	The courseCode the customer input was : ${customer.courseCode}.
+	
 </body>
 
 </html>

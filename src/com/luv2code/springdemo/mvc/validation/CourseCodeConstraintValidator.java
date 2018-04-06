@@ -3,8 +3,10 @@ package com.luv2code.springdemo.mvc.validation;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-public class CourseCodeConstraintValidator implements ConstraintValidator<CourseCode, String> {
+public class CourseCodeConstraintValidator 
+	implements ConstraintValidator<CourseCode, String> {
 
+	
 	private String coursePrefix;
 	
 	
@@ -15,6 +17,7 @@ public class CourseCodeConstraintValidator implements ConstraintValidator<Course
 	}
 	
 
+	// theCode is the actual value the user put into their field.
 	@Override
 	public boolean isValid(String theCode, ConstraintValidatorContext theConstraintValidatorContext) {
 		boolean result;
