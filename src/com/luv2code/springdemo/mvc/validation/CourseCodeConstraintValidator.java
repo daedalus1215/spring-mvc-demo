@@ -7,7 +7,7 @@ public class CourseCodeConstraintValidator
 	implements ConstraintValidator<CourseCode, String> {
 
 	
-	private String coursePrefix;
+	private String[] coursePrefix;
 	
 	
 	@Override
@@ -20,10 +20,17 @@ public class CourseCodeConstraintValidator
 	// theCode is the actual value the user put into their field.
 	@Override
 	public boolean isValid(String theCode, ConstraintValidatorContext theConstraintValidatorContext) {
-		boolean result;
+		boolean result = false;
 		
 		if (theCode != null) {
-			result = theCode.startsWith(coursePrefix);
+			for (String tempPrefix : this.coursePrefix) {
+				result = theCode.startsWith(tempPrefix);
+						
+				if (result) {
+					break;
+				}
+			}
+			
 		} else {
 			result = true;
 		}
